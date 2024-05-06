@@ -4,5 +4,8 @@ from django.shortcuts import render
 
 def index(request):
     return render(
-        request, 'blog/pages/index.html'
+        request, 'blog/pages/index.html',
+        {
+            'nome': 'Augusto Pontes'
+        }
         )
