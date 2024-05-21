@@ -1,0 +1,8 @@
+docker-compose up --build --remove-orphans --renew-anon-volumes --force-recreate 
+docker-compose up --build
+docker-compose run --rm djangoapp python migrate.sh
+docker-compose run --rm djangoapp python manage.py shell
+
+
+# password maria
+uzqZ[YA;"5*XwRQeL4%'a_
